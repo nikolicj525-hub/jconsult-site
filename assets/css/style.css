@@ -216,7 +216,10 @@ h1,h2,h3{text-wrap:balance}
 .about{display:flex;flex-wrap:wrap;align-items:center;gap:48px}
 .portrait{flex:0 1 340px;min-width:240px;aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:var(--navy);display:flex;align-items:center;justify-content:center}
 .portrait img{width:100%;height:100%;object-fit:cover}
-.about-copy{flex:1 1 420px;display:flex;flex-direction:column;gap:16px}
+.about-copy{max-width:720px;display:flex;flex-direction:column;gap:16px}
+.cv{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:12px}
+.cv li{display:flex;gap:14px;align-items:baseline;font-size:19px}
+.cv li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--gold);transform:translateY(-2px)}
 .about-copy p{margin:0;color:var(--muted)}
 .role{font-weight:600;font-size:19px}
 
